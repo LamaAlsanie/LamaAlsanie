@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="description" content="Web site created using create-react-app" />
+  <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+
+  <!-- Including Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="./css/App.css">
+  <link rel="stylesheet" href="./css/archive.css">
+  <link rel="stylesheet" href="./css/disconnect.css">
+  <link rel="stylesheet" href="./css/admin.css">
+  <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <title>React App</title>
+</head>
+
+<body>
+  <div id="root">
+    <div class="top_nav_wrapper">
+      <div class="top_nav_cover">
+        <a href="/">
+          <img src="./assets/images/top_brand.png" class='topbrand' alt="" />
+        </a>
+        <div class="form-center">
+          <div>Members Oversight</div>
+          <div>Management System</div>
+        </div>
+        <div class="ml-auto">
+          <div class='top_user_cover'>
+            <img src="./assets/images/top_user.png" class="top_user" />
+            <div class='online_badge'></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="sidebar_cover">
+      <div>
+        <div class="sidebar_item">
+          <div class='navbar_item_active'>
+            <div class='acvie_rect_left'></div>
+            <a href="./index.html" onClick="onItemClick()" class='center_center_column'>
+              <img src="./assets/images/nav_dashboard.png" alt="" class='navbar_img' />
+              <div class='navbar_text'>Home</div>
+            </a>
+            <div class='acvie_rect_right'></div>
+          </div>
+        </div>
+        <div class="sidebar_item">
+          <div class=''>
+            <div class='acvie_rect_left'></div>
+            <a href="./archive.html" onClick="onItemClick()" class='center_center_column'>
+              <img src="./assets/images/nav_archive.png" alt="" class='navbar_img' />
+              <div class='navbar_text'>Archive</div>
+            </a>
+            <div class='acvie_rect_right'></div>
+          </div>
+        </div>
+        <div class="sidebar_item">
+          <div class=''>
+            <div class='acvie_rect_left'></div>
+            <a href="./admin.html" onClick="onItemClick()" class='center_center_column'>
+              <img src="./assets/images/nav_users.png" alt="" class='navbar_img' />
+              <div class='navbar_text'>Administration</div>
+            </a>
+            <div class='acvie_rect_right'></div>
+          </div>
+        </div>
+      </div>
+      <div class="sidebar_item">
+        <div class=''>
+          <div class='acvie_rect_left'></div>
+          <a href="/" onClick="onItemClick()" class='center_center_column'>
+            <img src="./assets/images/nav_logout.png" alt="" class='navbar_img' />
+            <div class='navbar_text'>Log Out</div>
+          </a>
+          <div class='acvie_rect_right'></div>
+        </div>
+      </div>
+    </div>
+    <div class='page_wrapper'>
+      <div class='page_top_row'>
+        <div class='page_title'>Home Page</div>
+        <div class='page_top_user'>
+          <div>Mohammed</div>
+          <div>Approval</div>
+          <div>Last Login: 9/11/2022 10:12 AM</div>
+        </div>
+      </div>
+      <div class='home_body'>
+        <div class='home_body_title'>Menu</div>
+        <div class='center_between mb50'>
+          
+          <div class='home_sub_content_left col-md-5'>
+          <a href='./disconnect.html'>
+            <img src="assets/images/home_img01.png" alt="" /></a>
+            <div>
+              <div>Dis-Connectivity (FIX-GW)</div>
+              <div>Cases</div>
+            </div>
+            <div class='center_between'>
+              <div>
+                <div class='home_sub_number_01'>4</div>
+                <div class='home_sub_content_box'>Initiated</div>
+              </div>
+              <div>
+                <div class='home_sub_number_02'>2</div>
+                <div class='home_sub_content_box'>Initiated<br />Review</div>
+              </div>
+              <div>
+                <div class='home_sub_number_03'>1</div>
+                <div class='home_sub_content_box'>Pending<br />Approval</div>
+              </div>
+            </div>
+          </div>
+          
+          <div class='home_sub_content_right col-md-5'>
+            <img src="assets/images/home_img02.png" alt="" />
+            <div>
+              <div>XW Orders</div>
+              <div>Cases</div>
+            </div>
+            <div class='center_between'>
+              <div>
+                <div class='home_sub_number_01'>4</div>
+                <div class='home_sub_content_box'>Initiated</div>
+              </div>
+              <div>
+                <div class='home_sub_number_02'>2</div>
+                <div class='home_sub_content_box'>Initiated<br />Review</div>
+              </div>
+              <div>
+                <div class='home_sub_number_03'>1</div>
+                <div class='home_sub_content_box'>Pending<br />Approval</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class='center_between'>
+          <div class='home_sub_content_left_down col-md-5'>
+            <img src="assets/images/home_img03.png" alt="" />
+            <div>
+              <div>Market Violation</div>
+              <div>Cases</div>
+            </div>
+            <div class='center_between'>
+              <div>
+                <div class='home_sub_number_01'>4</div>
+                <div class='home_sub_content_box'>Initiated</div>
+              </div>
+              <div>
+                <div class='home_sub_number_02'>2</div>
+                <div class='home_sub_content_box'>Initiated<br />Review</div>
+              </div>
+              <div>
+                <div class='home_sub_number_03'>1</div>
+                <div class='home_sub_content_box'>Pending<br />Approval</div>
+              </div>
+            </div>
+          </div>
+          <div class='home_sub_content_right_down col-md-5'>
+            <img src="assets/images/home_img04.png" alt="" />
+            <div>
+              <div>&nbsp;</div>
+              <div>Cases</div>
+            </div>
+            <div class='center_between'>
+              <div>
+                <div class='home_sub_number_01'>4</div>
+                <div class='home_sub_content_box'>Initiated</div>
+              </div>
+              <div>
+                <div class='home_sub_number_02'>2</div>
+                <div class='home_sub_content_box'>Initiated<br />Review</div>
+              </div>
+              <div>
+                <div class='home_sub_number_03'>1</div>
+                <div class='home_sub_content_box'>Pending<br />Approval</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class='body_center_item'>
+          MOS
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
