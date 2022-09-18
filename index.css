@@ -1,0 +1,312 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.center_center_column{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.center_between{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.mb50{
+  margin-bottom: 50px;
+}
+.pr20{
+  padding-right: 20px;
+}
+.pl20{
+  padding-left: 20px;
+}
+.navbar_text{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  /* identical to box height */
+  text-transform: capitalize;
+  padding-top: 5px;
+  color: white;
+}
+.navbar_img{
+  width: 24px;
+  height: 24px;
+}
+.navbar_item_active{
+  display: flex;
+  justify-content: space-between;
+}
+
+.sidebar_cover{
+  position: fixed;     /* Fixed Sidebar (stay in place on scroll and position relative to viewport) */
+  height: calc(100% - 94px);
+  width: 120px;     /* Set the width of the sidebar */
+  z-index: 1;      /* Stay on top of everything */
+  top: 94px;      /* Stay at the top */
+  background-color: #222; /* Black */
+  overflow-x: hidden;     /* Disable horizontal scroll */
+  padding-top: 150px;
+  display: flex;
+  background: #22506C;
+  box-shadow: 4px 0px 9px rgba(0, 0, 0, 0.25);
+  flex-direction:column;
+  justify-content: space-between;
+}
+.sidebar_item{
+  height: 60px;
+  width: 120px; /* width must be same size as NavBar to center */
+  text-align: center; /* Aligns <a> inside of NavIcon div */
+  margin-bottom: 0;   /* Puts space between NavItems */
+  margin-top:3px;
+  margin-bottom: 5px;
+}
+.sidebar_item>a{
+  font-size: 2.7em;
+  color: white;
+}
+
+.sidebar_item>a:hover {
+  opacity: 0.7;
+  text-decoration: none; /* Gets rid of underlining of icons */
+}  
+
+.acvie_rect_left{
+  width: 6px;
+  height: inherit;
+  background-color: yellow;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+.acvie_rect_right{
+  width: 6px;
+  height: inherit;
+  background-color: yellow;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+.top_nav_wrapper{
+  position: fixed;
+  top:0;
+  width: 100%;
+  height: 90px;
+}
+
+.top_nav_cover{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 20px;
+  height: 94px;
+  background: #22506C;
+  box-shadow: 4px 0px 9px rgb(0 0 0 / 25%);
+  border-radius: 12px 12px 0px 0px;
+  z-index: 5;
+}
+  .navbar { 
+    height: 94px;
+    background: #22506C;
+    box-shadow: 4px 0px 9px rgba(0, 0, 0, 0.25);
+    border-radius: 12px 12px 0px 0px;
+    z-index:5;
+   }
+ 
+  .navbar-brand {
+    font-size: 1.4em;
+    color: #9FFFCB;
+  }
+  .form-center {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    color: #FFFFFF;
+    width: fit-content;
+  }
+
+.topbrand{
+  width: 240px;
+  height: 73px;
+}
+.top_user_cover{
+  position: relative;
+  height: 50px;
+  width: 50px;
+}
+.top_user{
+  height: 50px;
+  width: 50px;
+}
+.online_badge{
+  background-color: greenyellow;
+  height: 14px;
+  width: 14px;
+  border-radius: 10px;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+}
+
+
+/* ///////////////////// main page*/
+.page_wrapper{
+  margin-left: 160px;
+  margin-right: 56px;
+  margin-bottom: 40px;
+  margin-top: 90px;
+}
+.page_top_row{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 44px;
+}
+.page_title{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 33.3826px;
+  line-height: 50px;
+  /* identical to box height */
+  text-transform: capitalize;
+  color: #000000;
+}
+.page_top_user{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+
+  color: #000000;
+}
+.home_body{
+  background: rgba(0, 0, 0, 0.25);
+  box-shadow: 8px 2px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  padding: 20px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  text-transform: capitalize;
+
+  color: #000000;
+  position: relative;
+}
+.body_center_item{
+  background: #D9D9D9;
+  width: 141px;
+  height: 134px;
+  border-radius: 70px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  font-family: 'Pangolin';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 45px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #000000;
+  position: absolute;
+  top: 300px;
+  left: calc(50% - 70px);
+}
+.home_body_title{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  /* identical to box height */
+  text-transform: capitalize;
+  color: #000000;
+  text-align: left;
+}
+.home_sub_content_box{
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.home_sub_content_left{
+  background: #FFFFFF;
+  box-shadow: 5px 3px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 16px 16px 90px 16px;
+  padding: 23px 45px 20px!important;
+}
+.home_sub_content_right{
+  background: #FFFFFF;
+  box-shadow: 5px 3px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 16px 16px 16px 90px;
+  padding: 23px 45px 20px!important;
+}
+.home_sub_number_01{
+  font-family: 'Pangolin';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 45px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #D8C045;
+}
+.home_sub_number_02{
+  font-family: 'Pangolin';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 45px;
+  text-align: center;
+  text-transform: capitalize;
+  
+  color: #36637E;
+}
+.home_sub_number_03{
+  font-family: 'Pangolin';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 45px;
+  text-align: center;
+  text-transform: capitalize;
+  
+  color: #7E363A;
+}
+
+.home_sub_content_left_down{
+  background: #FFFFFF;
+  box-shadow: 5px 3px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 16px 90px 16px 16px;
+  padding: 23px 45px 20px!important;
+}
+.home_sub_content_right_down{
+  background: #FFFFFF;
+  box-shadow: 5px 3px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 90px 16px 16px 16px;
+  padding: 23px 45px 20px!important;
+}
