@@ -1,0 +1,9 @@
+.bg{background: url('../Images/Background.jpg'); width: auto; height: auto;}
+
+.form-container{background-color: #04041aa1;  border:0px solid; color: rgb(227, 227, 228) ; padding: 50px 60px; margin-left: 20px; margin-top: 20vh ; -webkit-box-shadow: 3px 5px 45px 6px rgba(0,0,0,0.75);
+    -moz-box-shadow: 3px 5px 45px 6px rgba(0,0,0,0.75);
+    box-shadow: 3px 5px 45px 6px rgba(0,0,0,0.75);}
+    /* .h1{text-align: center; font-size: 30px; color: white; padding-top: 15px; font: sans-serif;} */
+.h2{text-align: center; font: sans-serif; font-size: 26px; font-weight: bold; padding-bottom: 20px;}
+.link-secondary{ color: rgb(109, 109, 109);  margin-left: 120px;}
+.btn-primary{ background-color: rgb(36, 38, 129); padding: 10px 35px; border-color: rgb(14, 14, 88);}
